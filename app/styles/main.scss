@@ -1,0 +1,327 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+//
+// * {
+//   margin: 0;
+// padding: 0;
+// border: 0;
+// vertical-align: middle;
+// }
+
+.choose-btns {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.centered {
+  text-align:center;
+}
+//choose button
+.choose {
+  font-size: 1.5em;
+}
+
+// .btn-x {
+//   background-color: #000;
+//   color:#fff;
+// }
+
+.btn-o, .btn-x {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.choose.active {
+  background: #000;
+  color: #fff;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico|Lato);
+
+body{
+  font-family : lato,sans;
+}
+
+
+div.head h1{
+  color:#444;
+  font-size : 4em;
+  margin : 30px auto;
+  text-align : center;
+}
+
+.curs{
+  font-family: 'Pacifico',serif;
+}
+
+.wrap{
+  position:relative;
+  margin:auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  left: 15px;
+  width : 400px;
+}
+
+.row{
+  text-align:center;
+  margin : 10px auto;
+}
+
+div.pop-up h3{
+  text-align:center;
+  padding-top: 5px;
+  color: #444;
+}
+
+.inline{
+  display:inline-block;
+  margin:10px 5px;
+  text-align:center;
+}
+
+.big{
+  font-size:2em;
+  margin : 30px auto;
+}
+
+#sub{
+  color: #888;
+}
+
+.el,.el-s,.el-o{
+  vertical-align:middle;
+  display: inline-block;
+  height:110px;
+  width:110px;
+  font-size : 4.5em;
+  background-color : #71cae8;
+  border-radius:20px;
+  margin: auto 5px;
+  padding-top: 5px;
+  color: #f8f8f8;
+}
+
+.el-o{
+  margin-right: 20px;
+}
+.screen{
+  display:none;
+  background-color:rgba(10,10,10,0.6);
+  position:fixed;
+  width: 100%;
+  height : 100%;
+  top : 0;
+}
+
+.pop-up{
+  position:absolute;
+  width : 400px;
+  height : 175px;
+  border-radius: 20px;
+  background-color:#fff;
+  margin: 0 auto;
+  top  : 250px;
+  left : 50%;
+  margin-left: -200px;
+  display:none;
+}
+
+#mask {
+  background-color: rgba(0,0,0, 0.2);;
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.popup {
+  position:absolute;
+  background: rgba(220,220,220, 0.4);
+  height:200px;
+  width:300px;
+  left:38%;
+  top:40%;
+  color:#222;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding:20px;
+  z-index:10;
+  display:none;
+}
+
+.btn-primary {
+  width:85px;
+  text-transform: uppercase;
+  line-height:30px;
+  color:#eee;
+  border:none;
+  background: #252342;
+   &:hover {
+     background: lighten(#252342, 20%);
+   }
+}
+
+.close {
+  color:#222 !important;
+
+}
+#message-win {
+  text-align: center;
+  vertical-align:middle;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height:100px;
+}
+
+.winningRow{
+  background-color: #E6382B;
+}
+
+.tie{
+  background-color: #a5bcae;
+}
+
+.free{
+  cursor : pointer;
+  background-color: #71A299;
+}
+
+.free:hover{
+  background-color : #61b2a3;
+}
+
+/* Scaling for Mobile */
+@media screen and (max-width: 450px){
+
+  .head {
+    display:none;
+  }
+  .wrap {
+    top: 30px;
+
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    left: 50%;
+    margin-left: -140px;
+  }
+
+  .pop-up {
+
+    top: 100px;
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    left: 50%;
+    margin-left: -140px;
+  }
+}
